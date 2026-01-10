@@ -1,0 +1,45 @@
+h1{
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+.small_print{
+    font-size: .75em;
+    color: rgb(5, 108, 188);
+    text-align: center;
+    letter-spacing: 3px;
+}
+hr{
+    margin-top: -7px;
+    height: 1px;
+    background-color: black;
+}
+.heading{
+    padding-top: 20px;
+}
+.slanted{
+    font-style: italic;
+    margin-top: 10px;
+}
+#page{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+    
+}
+
+ol, li {
+    padding: 15px;
+}
+ol{
+    list-style-position: inside;
+    margin-top: -15px;
+}
+#image{
+    text-align: center;
+}
+img{
+    width: 200px;
+    height: 100px;
+}
