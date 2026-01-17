@@ -4,16 +4,19 @@ h1{
     letter-spacing: 2px;
     
 }
-.small_print{
+.small-print{
     font-size: .75em;
-    color: rgb(5, 108, 188);
+    color: rgb(49, 150, 227);
     text-align: center;
     letter-spacing: 3px;
 }
 hr{
     margin-top: -7px;
     height: 1px;
-    background-color: black;
+    background-color: lightgray;
+    margin-left: 25%;
+    margin-right: 25%;
+
 }
 .heading{
     padding-top: 20px;
@@ -23,8 +26,8 @@ hr{
     margin-top: 10px;
 }
 #page{
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 5%;
     
 }
@@ -42,4 +45,10 @@ ol{
 img{
     width: 200px;
     height: 100px;
+}
+
+.dark{
+    background-color: #333;
+    color: white;
+
 }
