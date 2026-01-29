@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+EDUCATIONAL DEMO ONLY
+QR Phishing (Quishing) Awareness Example
+NO REAL PAYMENTS – NO DATA IS SENT
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Verified</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Fake mobile browser URL bar -->
+<div class="url-bar">
+    🔒 https://
+    <span class="domain">secure-cityparking-pay.com</span>
+    /session/verify
+</div>
+
+<div class="container">
+    <h1>City Parking</h1>
+    <p class="subtitle">Pay for your parking session</p>
+
+    <div class="notice">
+        ⚠️ Demo Site – No real payment is processed
+    </div>
+
+    <form id="paymentForm">
+        <label>
+            License Plate
+            <input type="text" placeholder="ABC1234">
+        </label>
+
+        <label>
+            Parking Zone
+            <input type="text" placeholder="Zone 247">
+        </label>
+
+        <label>
+            Card Number
+            <input type="text" placeholder="1234 5678 9012 3456">
+        </label>
+
+        <div class="row">
+            <label>
+                Expiration
+                <input type="text" placeholder="MM/YY">
+            </label>
+
+            <label>
+                CVV
+                <input type="text" placeholder="123">
+            </label>
+        </div>
+
+        <button type="button" onclick="showWarning()">
+            Pay $4.50
+        </button>
+    </form>
+
+    <p class="footer">
+        © 2026 City Parking Authority
+    </p>
+</div>
+
+<!-- Educational popup -->
+<div class="overlay" id="overlay">
+    <div class="popup">
+        <h2>⚠️ This Was a QR Phishing Demo</h2>
+        <p>
+            This page looks legitimate, but it demonstrates how attackers
+            steal payment details using QR codes.
+        </p>
+        <ul>
+            <li>The domain is a look-alike, not an official city site</li>
+            <li>QR-initiated payments are high risk</li>
+            <li>Physical QR codes can be replaced with malicious ones</li>
+        </ul>
+        <button onclick="closeWarning()">Got it</button>
+    </div>
+</div>
+
+<script defer>
+function showWarning() {
+    document.getElementById("overlay").style.display = "flex";
+}
+
+function closeWarning() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
