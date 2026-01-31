@@ -62,9 +62,39 @@ footer{
     height: 50px;
     text-align: center;
 }
+dialog img {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 20vh auto;
+    border: none;
+    object-fit: cover;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+
+
 @media screen and (min-width: 700px){
     .grid{
         grid-template-columns: 1fr 1fr;
+    }
+    dialog img {
+        width: 600px;
+        height: 450px;
+        display: block;
+        margin: 20vh auto;
+        border: none;
+        object-fit: cover;
     }
 }
 
@@ -79,5 +109,13 @@ footer{
     nav a{
         display: inline;
 
+    }
+    dialog img {
+        width: 600px;
+        height: 450px;
+        display: block;
+        margin: 20vh auto;
+        border: none;
+        object-fit: cover;
     }
 }     
