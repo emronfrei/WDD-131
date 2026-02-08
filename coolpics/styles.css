@@ -37,7 +37,8 @@ nav a{
 body{
     background-color: lightgrey;
 }
-.grid{
+.gallery{
+    max-width: 1200px;
     display: grid;
     margin: 0 auto;
     grid-template-columns: 1fr;
@@ -85,7 +86,7 @@ dialog {
 
 
 @media screen and (min-width: 700px){
-    .grid{
+    .gallery{
         grid-template-columns: 1fr 1fr;
     }
     dialog img {
@@ -99,7 +100,7 @@ dialog {
 }
 
 @media screen and (min-width: 1000px){
-    .grid{
+    .gallery{
         grid-template-columns: 1fr 1fr 1fr;
     }
     .menu-btn{
