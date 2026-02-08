@@ -1,0 +1,87 @@
+h1 {
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 45px;
+    
+    border-top: 2px solid rgba(202, 180, 14, 0.569);
+    border-bottom: 2px solid rgba(202, 180, 14, 0.569);
+    height: 50px;
+    padding: 0 15px;
+}
+
+nav a {
+    color: red;
+    margin-top: 15px;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    border-top: 2px solid rgba(202, 180, 14, 0.569);
+    border-bottom: 2px solid rgba(202, 180, 14, 0.569);
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.info {
+    text-align: right;
+    grid-column: 3/4;
+    margin-right: 15px;
+}
+.reveiw{
+    grid-column: 1/4;
+    
+}
+.reveiw img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.reveiw p {
+    text-align: left;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+@media screen and (min-width: 600px){
+    .book{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .info{
+        grid-column: 1/2;
+
+    }
+    .reveiw{
+        grid-column: 2/4;
+        border-left: 2px solid rgba(202, 180, 14, 0.569);
+        text-align: left;
+    }
+    h2{
+        margin-left: 20px;
+        text-align: left;
+    }
+    .reveiw p{
+        margin-left: 20px;
+
+    }
+    .reveiw img{
+        margin-left: 200px;
+    }
+}
