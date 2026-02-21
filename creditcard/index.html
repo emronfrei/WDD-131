@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Credit card Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form id="form_grid">
+            <div id="front_grid">
+                <div id="price">
+                    <p>TOTAL: $199</p>
+                </div>
+                <p>💳</p>
+                <div id="cardNumber">
+                    <label for="cardNumber">CARD NUMBER</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9101 1020" aria-labelledby="cardNumber" maxlength="19">
+                </div>
+                <div id="cardHolder">
+                    <label for="cardHolder">CARD HOLDER</label>
+                    <input type="text" id="cardHolder" name="cardHolder" placeholder="John Doe" aria-labelledby="cardHolder">
+                </div>
+
+                <div id="cardExpiration">
+                    <label for="expirationDate">EXPIRATION</label>
+                    <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate" maxlength="2">
+                    <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate" maxlength="2">
+                </div>
+
+            </div>
+            <div id="back_grid">
+                 <div id="CVCcode">
+                    <label for="CVCcode">CVC/CVV</label>
+                    <input type="text" id="CVCcode" name="CVC" placeholder="xxx" aria-labelledby="CVCcode" maxlength="3"> 
+                </div>   
+                
+            </div> 
+            <button>Submit</button>  
+        </form>
+    </body>
+</html>
