@@ -33,7 +33,9 @@
 }
 
 .gallery > *{
+
     flex: 1 1 460px;
+    min-width: 460px;
 }
 
 
