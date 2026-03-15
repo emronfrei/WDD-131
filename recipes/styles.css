@@ -38,81 +38,43 @@ header img{
     border: 1px solid black;
     border-left: 1px solid #ccc;
     background: white;
-    cursor: pointer ;
-    border-radius: 0 5px 5px 0 ;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
 }
 .search-bar img {
     width: 20px;
     height: 20px;
 }
-#header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-h1, h2 {
-    font-family: "Amatic SC";
-}
-h2{
-    color: rgb(0, 187, 255);
-    font-size: 2em;
-}
-h1{
-    font-size: 5em;
-}
-header img{
-    height: 100px;
-    width: 100px;
-}
-#searchBar {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-.search-bar {
-    display: flex;
-}
-.search-bar input {
-    padding: 10px;
-    width: 400px;
-    border: 1px solid black;
-    border-right: none;
-    border-radius: 5px 0 0 5px;
-}
-.search-bar button {
-    padding: 10px;
-    border: 1px solid black;
-    border-left: 1px solid #ccc;
-    background: white;
-    cursor: pointer ;
-    border-radius: 0 5px 5px 0 ;
-}
-.search-bar img {
-    width: 20px;
-    height: 20px;
-}
+
+
 .recipeCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    margin: auto;
+    max-width: 460px;
+}
+
+
+.recipe-item {
     display: flex;
     flex-direction: column;
     padding: 25px;
     border: 1px solid black;
     border-radius: 5px;
-    width: 410px;
-    margin: auto;
-    
-    
 }
-.recipeCard img{
+
+.recipe-item img {
     align-self: center;
     width: 100%;
-
 }
-.recipeCard button {
+
+.recipe-item button {
     align-self: flex-start;
     color: black;
-    
 }
+
 .social{
     display: flex;
     padding: 20px;
@@ -141,37 +103,41 @@ footer a {
         border-radius: 5px 0 0 5px;
     }
 
+    
     .recipeCard {
-        display: flex;             
-        flex-direction: row;       
-        width: 700px;
-        gap: 20px;                
+        max-width: 800px;
+    }
+
+   
+    .recipe-item {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
         padding: 25px;
         border: 1px solid black;
         border-radius: 5px;
-        margin: auto;
     }
 
-    .recipeCard img {
-        width: 400px;         
-        height: auto; 
-        
+    .recipe-item img {
+        width: 250px;
+        height: auto;
+        align-self: flex-start;
     }
-   
+
     .description {
-       display: contents;      
+        display: contents;
     }
 
     .content {
         display: flex;
-        flex-direction: column;    
-        gap: 10px;                
-        align-items: flex-start;   
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
     }
 
     .content h2,
     .content button {
-        align-self: flex-start;    
+        align-self: flex-start;
     }
 
     footer {
@@ -180,12 +146,9 @@ footer a {
         align-items: center;
         padding-left: 100px;
         padding-right: 100px;
-        
-        
-        
     }
-    .social{
+
+    .social {
         margin-left: auto;
     }
-    
 }

@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">         
         <title>Recipes</title>
+        <script src="script.js" defer></script>
     </head>
     <body>
         <main>
@@ -34,31 +35,15 @@
             </header>
                 <div id="searchBar">
                     <form class="search-bar">
-                        <input type="text" placeholder="Find a recipe">
-                        <button type="submit">
+                        <input id='search' type="text" placeholder="Find a recipe">
+                        <button type="button">
                             <img src="images/search.svg" alt="search icon">
                         </button>
                     </form>
                 </div>
 
                 <div class="recipeCard">
-                    <img src="images/apple-crisp.jpg" alt="apple-crisp">
-                    <div class="content">
-                        <button>dessert</button>
-                        <h2>Apple Crisp</h2>
-                        <div id="rating">                   
-                            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star-empty">☆</span>
-                            </span>      
-                        </div>
-                        <p class="description">This apple crisp is a simple yet delicious fall 
-                            dessert that's great served warm with vanilla ice cream.</p>
-                    </div> 
+                    
                 </div>
 
 
