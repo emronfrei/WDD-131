@@ -168,34 +168,79 @@ footer p{
     height: 20px;
     border: none;
 }
-form{
-    display: grid;
-    grid-template-columns: 1fr;
-   justify-items: center;
-   background-color: #FBF7F4;
+#form {
+    background-color: #FBF7F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 0.8rem;
 }
-#email{
-    width: 300px;
-    height: 50px;
-    background-color: #B56623;
-    color: #1F1300;
-}
-#message{
-    width: 300px;
-    height: 250px;
-    background-color: #B56623;
-    color: #1F1300;
-}
-#success-msg{
-    color: #B56623;
 
-}
-#contact{
+#contact {
     color: #1F1300;
     text-align: center;
-    text-wrap: wrap;
-    background-color: #FBF7F4;
+    max-width: 400px;
+    line-height: 1.5;
 }
+
+#form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+#form label {
+    font-size: 14px;
+    color: #1F1300;
+    align-self: flex-start;
+    margin-left: calc(50% - 160px);
+}
+
+#form input {
+    width: 320px;
+    padding: 10px;
+    background-color: #B56623;
+    border: 1.5px solid #1F1300;
+    color: #1F1300;
+    font-size: 15px;
+    outline: none;
+}
+
+#form input::placeholder {
+    color: rgba(31, 19, 0, 0.45);
+}
+
+#form input:focus {
+    border-color: #FBF7F4;
+}
+
+#form button {
+    width: 320px;
+    padding: 11px;
+    background-color: #1F1300;
+    color: #FBF7F4;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.4rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#form button:hover {
+    background-color: #B56623;
+    color: #1F1300;
+}
+
+#success-msg {
+    color: #B56623;
+    font-size: 14px;
+    text-align: center;
+}
+
 
 @media screen and (min-width: 800px){
     .links{
